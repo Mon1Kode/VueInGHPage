@@ -2,13 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
-  ssr: false,
   modules: [
     '@nuxtjs/tailwindcss',
     '@vueuse/motion/nuxt'
   ],
   nitro: {
-    preset: 'vercel' // Enables static site generation
+    preset: 'static',
   },
   app: {
     baseURL: "/",

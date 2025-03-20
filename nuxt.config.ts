@@ -6,8 +6,11 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@vueuse/motion/nuxt'
   ],
+  nitro: {
+    preset: 'static' // Enables static site generation
+  },
   app: {
-    baseURL: "https://github.com/Mon1Kode/VueInGHPage",
+    baseURL: "/",
     head: {
       title: 'Portfolio',
       meta: [

@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt'
   ],
   nitro: {
-    preset: 'static' // Enables static site generation
+    preset: 'vercel' // Enables static site generation
   },
   app: {
     baseURL: "/",

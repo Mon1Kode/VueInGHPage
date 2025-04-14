@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
   ssr: false,
   app: {
-    baseURL: '/monikode-portfolio/',
+    baseURL: '/',
     head: {
       link: [
         {

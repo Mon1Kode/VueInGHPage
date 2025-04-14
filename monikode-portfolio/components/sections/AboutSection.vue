@@ -7,22 +7,25 @@
         class="max-w-3xl mx-auto text-center py-20"
     >
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-600 mb-4">About Me</h2>
-        <p class="text-gray-700 dark:text-gray-100 text-lg mb-8">
-          I'm a mobile developer who loves to build impactful applications using modern tools and intuitive design.
+        <h2 class="text-3xl font-semibold text-gray-900 dark:text-white mb-4">About Me</h2>
+        <p class="text-gray-700 dark:text-gray-400 text-lg mb-8 text-left">
+          Hi, I’m Victor Delamonica, a mobile developer passionate about creating beautiful and functional applications that make a difference. With years of experience in mobile development, I've worked on various projects that have helped me grow as a developer.
+          <br/>
+          <br/>
+          When I'm not coding, you'll find me exploring new festivals and events in different cities. Music and food are my two favorite things, and I love trying new style of music.
         </p>
         <div class="flex justify-center gap-12 flex-wrap">
           <div class="flex flex-col items-center">
             <img src="/flutter-icon.png" alt="Flutter" class="w-14 h-14 object-contain mb-2"/>
-            <span class="text-gray-600 text-sm">Flutter</span>
+            <span class="text-gray-300 text-sm">Flutter</span>
           </div>
           <div class="flex flex-col items-center">
             <img src="/firebase-icon.png" alt="Firebase" class="w-14 h-14 object-contain mb-2"/>
-            <span class="text-gray-600 text-sm">Firebase</span>
+            <span class="text-gray-300 text-sm">Firebase</span>
           </div>
           <div class="flex flex-col items-center">
             <img src="/figma-icon.png" alt="Figma" class="w-14 h-14 object-contain mb-2"/>
-            <span class="text-gray-600 text-sm">Figma</span>
+            <span class="text-gray-300 text-sm">Figma</span>
           </div>
         </div>
       </div>

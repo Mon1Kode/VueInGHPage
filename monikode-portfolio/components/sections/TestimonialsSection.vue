@@ -1,6 +1,6 @@
 <template>
   <section
-      class="py-20 bg-gray-100 dark:bg-gray-950 overflow-hidden font-sans dark:text-gray-100  dark:shadow-lg"
+      class="py-20 bg-gray-100 dark:bg-gray-950 overflow-hidden font-sans dark:text-gray-400  dark:shadow-lg"
       @mouseenter="pause = true"
       @mouseleave="pause = false"
       @touchstart="handleTouchStart"
@@ -8,7 +8,7 @@
       @touchend="handleTouchEnd"
   >
     <div class="max-w-6xl mx-auto text-center mb-10">
-      <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-600 ">What People Say</h2>
+      <h2 class="text-3xl font-semibold text-gray-900 dark:text-white ">What People Say</h2>
     </div>
 
     <div class="relative w-full overflow-hidden px-4">

@@ -4,11 +4,24 @@
 
     <!-- Header: Logo + Title -->
     <div class="flex flex-col sm:flex-row items-center gap-6 mt-8 mb-10">
-      <img :src="project.logo" alt="App Logo" class="w-16 h-16 rounded-lg shadow-md dark:shadow-slate-500" />
+      <img :src="project.logo" alt="App Logo" class="w-16 h-16 rounded-lg shadow-md dark:shadow-slate-500"/>
       <div>
         <h1 class="text-3xl font-bold">{{ project.title }}</h1>
-        <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">{{ project.subtitle }}</p>
+        <p class="text-gray-600 dark:text-gray-400 text-sm mt-1">{{ project.subtitle }}</p>
       </div>
+    </div>
+
+    <div v-if="project.stack && project.stack.length" class="flex flex-wrap gap-3 mb-12">
+  <span
+      v-for="tech in project.stack"
+      :key="tech"
+      :class="[
+  'px-3 py-1 rounded-full text-sm font-medium border',
+  techColors[tech] || 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200'
+]"
+  >
+    {{ tech }}
+  </span>
     </div>
 
     <!-- Description -->
@@ -43,61 +56,15 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router'
 
-const route = useRoute()
-const slug = route.params.slug
-
-const projectData = {
-  buurtwerf: {
-    title: 'Buurtwerf',
-    subtitle: 'Greenup platform for eco-friendly neighborhoods',
-    logo: '/logos/buurtwerf.png',
-    description:
-        'Buurtwerf helps communities plan and share green actions. Built with Flutter + Firebase to stay fast and simple.',
-    screenshots: [
-      '/screens/buurtwerf-1.png',
-      '/screens/buurtwerf-2.png',
-      '/screens/buurtwerf-3.png',
-      '/screens/buurtwerf-4.png',
-    ],
-    link: '',
-    cta: 'View on App Store',
-  },
-
-  festpocket: {
-    title: 'FestPocket',
-    subtitle: 'Greenup platform for eco-friendly neighborhoods',
-    logo: '/logos/festpocket.png',
-    description:
-        'Buurtwerf helps communities plan and share green actions. Built with Flutter + Firebase to stay fast and simple.',
-    screenshots: [
-      '/screens/festpocket-1.png',
-      '/screens/festpocket-2.png',
-      '/screens/festpocket-3.png',
-      '/screens/festpocket-4.png',
-    ],
-    link: 'https://apps.apple.com/fr/app/festpocket/id1560730734',
-    cta: 'View on App Store',
-  },
-
-  lapasserelle: {
-    title: 'La Passerelle',
-    subtitle: 'Greenup platform for eco-friendly neighborhoods',
-    logo: '/logos/lapasserelle.png',
-    description:
-        'La Passerelle helps communities plan and share green actions. Built with Flutter + Firebase to stay fast and simple.',
-    screenshots: [
-      '/screens/lapasserelle-1.png',
-      '/screens/lapasserelle-2.png',
-      '/screens/lapasserelle-3.png',
-      '/screens/lapasserelle-4.png',
-    ],
-    link: 'https://apps.apple.com/us/app/la-passerelle-draw-your-fight/id6502902535',
-    cta: 'View on App Store',
-  },
-
+const techColors = {
+  Flutter: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
+  Firebase: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-100',
+  Figma: 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-100',
 }
+import { useRoute } from 'vue-router'
+import { projects } from '@/data/projects'
 
-const project = projectData[slug] || null
+const slug = useRoute().params.slug
+const project = projects.find(p => p.slug === slug)
 </script>

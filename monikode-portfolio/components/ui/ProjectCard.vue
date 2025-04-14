@@ -1,14 +1,19 @@
 <template>
-  <div
-      class="bg-white dark:bg-gray-600  rounded-xl shadow-md p-6 flex flex-col items-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in-down"
-  >
-    <img
-        :src="image"
-        :alt="title"
-        class="w-20 h-20 object-contain mb-4"
-    />
-    <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 ">{{ title }}</h3>
-    <p class="text-gray-600 dark:text-gray-400 text-sm mt-2">{{ description }}</p>
+  <div class="bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden p-4 flex flex-col items-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in-down">
+    <img :src="image" alt="" class="w-full h-40 object-contain rounded-md mb-3" />
+    <h3 class="text-lg font-semibold mb-1 dark:text-white">{{ title }}</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8">{{ description }}</p>
+
+    <!-- Tech Chips: bottom-left corner -->
+    <div class="absolute bottom-3 left-3 flex flex-wrap gap-2">
+      <span
+          v-for="tech in stack"
+          :key="tech"
+          class="text-xs px-2 py-0.5 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
+      >
+        {{ tech }}
+      </span>
+    </div>
   </div>
 </template>
 
@@ -25,5 +30,6 @@ defineProps({
     type: String,
     default: 'Coming Soon',
   },
+  stack: []
 })
 </script>

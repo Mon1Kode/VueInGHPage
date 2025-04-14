@@ -3,17 +3,18 @@ name: Deploy Nuxt to GitHub Pages
 on:
   push:
     branches:
-      - master  # Change this to your main branch if different
+      - master  # or main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: monikode-portfolio
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-
-      - name: Change working directory
-        run: cd monikode-portfolio
 
       - name: Install Node.js
         uses: actions/setup-node@v3
@@ -31,4 +32,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: .output/public
+          folder: monikode-portfolio/.output/public

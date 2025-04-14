@@ -8,7 +8,12 @@ export default defineNuxtConfig({
     classSuffix: '',
     preference: 'system', // default
   },
+  nitro: {
+    preset: 'github_pages',
+  },
+  ssr: false,
   app: {
+    baseURL: '/monikode-portfolio/',
     head: {
       link: [
         {

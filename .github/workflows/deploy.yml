@@ -12,6 +12,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Change working directory
+        run: cd monikode-portfolio
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:

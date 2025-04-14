@@ -23,9 +23,11 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
+        working-directory: monikode-portfolio
         run: npm install
 
       - name: Build Project
+        working-directory: monikode-portfolio
         run: npm run generate
 
       - name: Deploy to GitHub Pages

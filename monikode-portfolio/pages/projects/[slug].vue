@@ -36,7 +36,7 @@
             v-for="(img, i) in project.screenshots"
             :key="i"
             :src="img"
-            class="w-[200px] md:w-[250px] h-auto rounded-xl shadow shrink-0 object-cover"
+            class="w-[200px] md:w-[250px] h-auto rounded-xl shadow-lg shrink-0 object-cover"
             alt="App Screenshot"
         />
       </div>
@@ -61,6 +61,7 @@ const techColors = {
   Flutter: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
   Firebase: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-100',
   Figma: 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-100',
+  Riverpod: 'bg-blue-900 text-blue-200 dark:bg-blue-200 dark:text-blue-800',
 }
 import { useRoute } from 'vue-router'
 import { projects } from '@/data/projects'

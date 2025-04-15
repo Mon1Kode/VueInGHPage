@@ -24,7 +24,7 @@
         ></textarea>
         <button
             type="submit"
-            class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            class="w-full py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition"
         >
           Send Message (inactive)
         </button>

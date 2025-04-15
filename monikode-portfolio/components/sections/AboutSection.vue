@@ -17,15 +17,19 @@
         <div class="flex justify-center gap-12 flex-wrap">
           <div class="flex flex-col items-center">
             <img src="/flutter-icon.png" alt="Flutter" class="w-14 h-14 object-contain mb-2"/>
-            <span class="text-gray-300 text-sm">Flutter</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">Flutter</span>
           </div>
           <div class="flex flex-col items-center">
             <img src="/firebase-icon.png" alt="Firebase" class="w-14 h-14 object-contain mb-2"/>
-            <span class="text-gray-300 text-sm">Firebase</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">Firebase</span>
           </div>
           <div class="flex flex-col items-center">
             <img src="/figma-icon.png" alt="Figma" class="w-14 h-14 object-contain mb-2"/>
-            <span class="text-gray-300 text-sm">Figma</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">Figma</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="/riverpod-icon.png" alt="Riverpod" class="w-14 h-14 object-contain mb-2"/>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">Riverpod</span>
           </div>
         </div>
       </div>

@@ -68,8 +68,6 @@ export const projects: Project[] = [
             '/screens/buurtwerf-3.png',
             '/screens/buurtwerf-4.png',
         ],
-        link: 'https://apps.apple.com/your-buurtwerf-link',
-        cta: 'View on App Store',
     },
     {
         slug: 'festpocket',

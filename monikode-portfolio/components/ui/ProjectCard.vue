@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden p-4 flex flex-col items-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in-down">
-    <img :src="image" alt="" class="w-full h-40 object-contain rounded-md mb-3" />
+  <div class=" relative bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden p-4 flex flex-col items-center text-center transition-shadow duration-300 hover:shadow-2xl hover:-translate-y-1 hover:z-10 animate-fade-in-down dark:shadow-gray-400">
+    <img :src="image" alt="" class="w-full h-40 object-contain rounded-md mb-3"/>
     <h3 class="text-lg font-semibold mb-1 dark:text-white">{{ title }}</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-8">{{ description }}</p>
 

@@ -1,6 +1,6 @@
 <template>
   <div
-      class="bg-white dark:bg-gray-800 w-[280px] md:w-[320px] p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex-shrink-0"
+      class="bg-white dark:bg-gray-800 w-[280px] md:w-[320px] h-[150px] p-6 rounded-xl shadow-md hover:shadow-lg transition-all flex-shrink-0"
   >
     <p class="text-gray-700 dark:text-gray-400 italic text-sm leading-relaxed break-words whitespace-normal">
       “{{ quote }}”

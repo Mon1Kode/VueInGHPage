@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen px-6 py-20 max-w-5xl mx-auto font-sans text-gray-900 dark:text-white">
-    <NuxtLink to="/" class="text-blue-600 hover:underline text-sm">&larr; Back to home</NuxtLink>
+    <NuxtLink to="/" class="text-blue-600 dark:text-blue-300 hover:underline text-sm">&larr; Back to home</NuxtLink>
 
     <!-- Header: Logo + Title -->
     <div class="flex flex-col sm:flex-row items-center gap-6 mt-8 mb-10">

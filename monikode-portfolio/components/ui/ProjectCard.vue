@@ -30,6 +30,6 @@ defineProps({
     type: String,
     default: 'Coming Soon',
   },
-  stack: []
+  stack: Array
 })
 </script>

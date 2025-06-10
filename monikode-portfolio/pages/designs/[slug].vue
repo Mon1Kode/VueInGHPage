@@ -126,7 +126,7 @@ const techColors: Record<string, string> = {
           >
             <img
                 :src="img"
-                class="w-[200px] md:w-[250px] h-auto rounded-xl shadow-lg object-cover"
+                class="w-[200px] md:w-[250px] h-auto rounded-xl shadow-lg shrink-0 object-cover"
                 alt="App Screenshot"
             />
           </div>

@@ -29,5 +29,26 @@ export const designs: Design[] = [
             "/screens/designs/exo2-first-submit.png",
             "/screens/designs/exo2-second-submit.png"
         ],
+    },
+    {
+        slug: "travel-itinerary-exercise-3",
+        title: "My Day Travel Itinerary",
+        subtitle: "Light-Themed Itinerary UI Exercise",
+        description: "A clean, light-mode mobile screen for a travel‐itinerary app showing your next reservation, today’s schedule timeline, and a map preview with quick actions. Built on an 8-point grid, with sky-blue accents, friendly typography, and clear tap targets.",
+        image: "/screens/designs/travel-itinerary-cover.png",
+        cover: "/screens/designs/travel-itinerary-cover.png",
+        tools: ["Figma", "June 2025"],
+        colors: [
+            "#FDFBFB",
+            "#BAE6FD",
+            "#FDD1BA",
+            "#191B1C",
+        ],
+        references: [
+            "/screens/designs/exo3-ref.png",
+        ],
+        screenshots: [
+            "/screens/designs/exo3-first-submit.png"
+        ],
     }
 ];

@@ -3,7 +3,7 @@ import {designs} from '@/data/design'
 import {useRoute} from 'vue-router'
 
 const slug = useRoute().params.slug
-const design = designs.find((d => d.slug === slug))
+const design = designs.reverse().find((d => d.slug === slug))
 const copiedColor = ref<string | null>(null)
 let clearCopyTimeout: ReturnType<typeof setTimeout>
 

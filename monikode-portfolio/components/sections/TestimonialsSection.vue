@@ -38,7 +38,7 @@ const loopedTestimonials = computed(() => [...testimonials, ...testimonials])
 
 .marquee-track {
   display: flex;
-  width: 70%;
+  gap: 0.5rem;
   animation: scroll 20s linear infinite;
 }
 

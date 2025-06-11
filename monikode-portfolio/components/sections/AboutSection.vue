@@ -13,6 +13,8 @@
           <br/>
           <br/>
           When I'm not coding, you'll find me exploring new festivals and events in different cities. Music and food are my two favorite things, and I love trying new style of music.
+          <br/>
+          PS: For my ongoing UX/UI practice, see my <span @click="$emit('scrollTo', 'designs')" class="text-blue-300 dark:text-gray-50 hover:underline cursor-pointer">designs</span> section.
         </p>
         <div class="flex justify-center gap-12 flex-wrap">
           <div class="flex flex-col items-center">

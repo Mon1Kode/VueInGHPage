@@ -50,5 +50,28 @@ export const designs: Design[] = [
         screenshots: [
             "/screens/designs/exo3-first-submit.png"
         ],
+    },
+    {
+        slug: "fitness-tracker-exercise-4",
+        title: "Fitness Tracker Home Screen",
+        subtitle: "Daily Progress & Quick-Start UI Exercise",
+        description:
+            "A light-mode fitness-tracker home screen showing daily summary cards (steps, calories, active minutes), a workout-streak meter, and a prominent Start Workout button. Built on an 8-point grid with white background and teal/orange accents.",
+        cover: "/screens/designs/fitness-tracker-cover.png",
+        image: "/screens/designs/fitness-tracker-cover.png",
+        tools: ["Figma", "June 2025"],
+        colors: [
+            "#FFFFFF",
+            "#069494",
+            "#FF7017",
+            "#000000"
+        ],
+        references: [
+            "/screens/designs/exo4-ref.png",
+        ],
+        screenshots: [
+            "/screens/designs/exo4-first-submit.png",
+            "/screens/designs/exo4-final-submit.png",
+        ],
     }
 ];

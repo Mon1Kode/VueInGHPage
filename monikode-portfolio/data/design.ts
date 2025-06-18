@@ -73,5 +73,28 @@ export const designs: Design[] = [
             "/screens/designs/exo4-first-submit.png",
             "/screens/designs/exo4-final-submit.png",
         ],
+    },
+    {
+        slug: "product-detail-exercise-5",
+        title: "E-Commerce Product Detail Screen",
+        subtitle: "Mobile Shopping UI Exercise",
+        description:
+            "A light-mode product-detail screen featuring an image carousel with thumbnails, clear product info (name, price, rating, description), and a sticky bottom panel with quantity selector, Add to Cart button, and Buy Now link. Designed on an 8-point grid with white background and navy/coral accents.",
+        cover: "/screens/designs/product-detail-cover.png",
+        image: "/screens/designs/product-detail-cover.png",
+        tools: ["Figma"],
+        colors: [
+            "#F8F8F8",
+            "#001F48",
+            "#FF8559",
+            "#FFFFFF"
+        ],
+        references: [
+            "/screens/designs/exo5-ref.png",
+        ],
+        screenshots: [
+            "/screens/designs/exo5-first-submit.png",
+            "/screens/designs/exo5-final-submit.png"
+        ],
     }
 ];

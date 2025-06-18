@@ -82,7 +82,7 @@ export const designs: Design[] = [
             "A light-mode product-detail screen featuring an image carousel with thumbnails, clear product info (name, price, rating, description), and a sticky bottom panel with quantity selector, Add to Cart button, and Buy Now link. Designed on an 8-point grid with white background and navy/coral accents.",
         cover: "/screens/designs/product-detail-cover.png",
         image: "/screens/designs/product-detail-cover.png",
-        tools: ["Figma"],
+        tools: ["Figma", "June 2025"],
         colors: [
             "#F8F8F8",
             "#001F48",

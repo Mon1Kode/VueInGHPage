@@ -48,7 +48,8 @@ export const designs: Design[] = [
             "/screens/designs/exo3-ref.png",
         ],
         screenshots: [
-            "/screens/designs/exo3-first-submit.png"
+            "/screens/designs/exo3-first-submit.png",
+            "/screens/designs/exo3-final-submit.png"
         ],
     },
     {
@@ -95,6 +96,29 @@ export const designs: Design[] = [
         screenshots: [
             "/screens/designs/exo5-first-submit.png",
             "/screens/designs/exo5-final-submit.png"
+        ],
+    },
+    {
+        slug: "mental-health-checkin-exercise-6",
+        title: "Mental Health Check-In Screen",
+        subtitle: "Calm UI Exercise for Well-being",
+        description:
+            "A soothing, pastel-themed mobile screen for a daily mental-health check-in. Includes a mood selector, a quick journal prompt, and a self-care suggestion card, all arranged in a tranquil, spacious layout with clear tap targets.",
+        image: "/screens/designs/mental-health-cover.png",
+        cover: "/screens/designs/mental-health-cover.png",
+        tools: ["Figma", "June 2025"],
+        colors: [
+            "#CFF4D2",
+            "#CCCCCC",
+            "#9A9AEC",
+        ],
+        references: [
+            "/screens/designs/ref-mood-selector.png",
+            "/screens/designs/ref-activity.png"
+        ],
+        screenshots: [
+            "/screens/designs/exo6-first-submit.png",
+            "/screens/designs/exo6-final-submit.png"
         ],
     }
 ];

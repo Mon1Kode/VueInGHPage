@@ -21,10 +21,6 @@ const testimonials = [
     quote: 'Managing events with FestPocket is a breeze, intuitive and fast.',
     author: '– Raver',
   },
-  {
-    quote: 'La Passerelle helped me get support when I needed it most. Truly impactful.',
-    author: '– Anonymous',
-  },
 ]
 
 const loopedTestimonials = computed(() => [...testimonials, ...testimonials])

@@ -1,3 +1,5 @@
+import empty from "mocked-exports/empty";
+
 export interface Project {
     slug: string
     title: string
@@ -14,22 +16,23 @@ export interface Project {
 export const projects: Project[] = [
 
     {
-        slug: 'lapasserelle',
-        title: 'La Passerelle',
+        slug: 'lalternatve',
+        title: "L'Alternative",
         subtitle: 'Social support network',
         description:
-            'La Passerelle stands out as an innovative support program, specially designed for individuals awaiting care in a specialized service.',
-        image: '/screens/lapasserelle-1.png',
-        logo: '/logos/lapasserelle.png',
+            "L'Alternative, powered by IncluSens, stands out as an innovative support program, specially designed for individuals awaiting care in a specialized service.",
+        image: '/screens/lalternatve-1.png',
+        logo: '/logos/lalternatve.png',
         stack: ['Flutter', 'Firebase', "Figma"],
         screenshots: [
-            '/screens/lapasserelle-1.png',
-            '/screens/lapasserelle-2.png',
-            '/screens/lapasserelle-3.png',
-            '/screens/lapasserelle-4.png',
+            '/screens/lalternatve-1.png',
+            '/screens/lalternatve-2.png',
+            '/screens/lalternatve-3.png',
+            '/screens/lalternatve-4.png',
+            '/screens/lalternatve-5.png',
         ],
-        link: 'https://apps.apple.com/us/app/la-passerelle-draw-your-fight/id6502902535',
-        cta: 'View on App Store',
+        link: "",
+        cta: "",
     },
     {
         slug: 'fitphone',
@@ -68,6 +71,8 @@ export const projects: Project[] = [
             '/screens/buurtwerf-3.png',
             '/screens/buurtwerf-4.png',
         ],
+        link: "",
+        cta: ""
     },
     {
         slug: 'festpocket',

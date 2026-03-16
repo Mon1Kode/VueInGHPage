@@ -92,4 +92,25 @@ export const projects: Project[] = [
         link: 'https://apps.apple.com/fr/app/festpocket/id1560730734',
         cta: 'View on App Store',
     },
+    {
+        slug: 'myworld',
+        title: 'My Wolrd',
+        subtitle: 'Live intelligence layers for a world in motion.',
+        description:
+            'MyWorld is a real-time geopolitical map that fuses conflict alerts, humanitarian signals, economic infrastructure, and situational overlays into a single intuitive interface. Toggle curated data layers, ranging from sanctions or displacement flows to naval patrols and AI datacenters, to grasp emerging hotspots at a glance and drill into verified sources with one tap',
+        image: '/screens/myworld.jpg',
+        logo: '/logos/myworld.png',
+        stack: ['Flutter', "Figma"],
+        screenshots: [
+            '/screens/myworld-1.jpg',
+            '/screens/myworld-2.jpg',
+            '/screens/myworld-3.jpg',
+            '/screens/myworld-4.jpg',
+            '/screens/myworld-5.jpg',
+            '/screens/myworld-6.jpg',
+            '/screens/myworld-7.jpg',
+            '/screens/myworld-8.jpg',
+            '/screens/myworld-9.jpg',
+        ],
+    },
 ]
